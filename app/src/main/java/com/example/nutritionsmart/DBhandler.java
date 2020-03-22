@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBhandler extends SQLiteOpenHelper  {
 
-    public static final String DB_NAME = "Nutrition";
+    public static final String DB_NAME = "Nutrition";//each item will have brand etc try for 5 each category
 
     public static final String TABLE_NAME = "Food_Items";
     public static final String COLUMN_ID = "Item_Number";
@@ -33,6 +33,7 @@ public class DBhandler extends SQLiteOpenHelper  {
 
     }
 
+    //commit test
     @Override
     public void onCreate(SQLiteDatabase db) {
 
@@ -64,4 +65,21 @@ public class DBhandler extends SQLiteOpenHelper  {
         onCreate(db);
 
     }
+
+    public Boolean addItem(String name, String calories, String isVegan, String isVegetarian, String price){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(COLUMN_NAME, name);
+        contentValues.put(COLUMN_CALORIES, calories);
+        contentValues.put(COLUMN_ISVEGAN, isVegan);
+        contentValues.put(COLUMN_ISVEGETARIAN, isVegetarian);
+        contentValues.put(COLUMN_PRICE, price);
+
+        return (db.insert(TABLE_NAME, null, contentValues)!=-1);
+    }
+
+
 }
