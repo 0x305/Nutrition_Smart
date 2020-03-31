@@ -6,25 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/Search"
+        android:layout_width="135dp"
         android:layout_height="wrap_content"
         android:onClick="searchClicked"
-        android:text="Button"
+        android:text="@string/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Home"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/List"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Search" />
+
+    <Button
+        android:id="@+id/List"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="@string/list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Home" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/DietaryRestrictions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/dietary_restrictions"
+        app:layout_constraintBottom_toTopOf="@+id/Search"
+        app:layout_constraintEnd_toStartOf="@+id/Goals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Reminders"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/reminders"
+        app:layout_constraintBottom_toTopOf="@+id/Goals"
+        app:layout_constraintEnd_toEndOf="@+id/Goals"
+        app:layout_constraintStart_toStartOf="@+id/Goals"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Goals"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/goals"
+        app:layout_constraintBottom_toTopOf="@+id/Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DietaryRestrictions"
+        app:layout_constraintTop_toBottomOf="@+id/Reminders" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

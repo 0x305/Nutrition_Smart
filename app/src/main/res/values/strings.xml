@@ -7,4 +7,11 @@
     <string name="reminders">Reminders</string>
     <string name="goals">Goals</string>
     <string name="welcome">Welcome!</string>
+    
+    <string-array name="filters">
+        <item>Price</item>
+        <item>Sugar</item>
+        <item>Calories</item>
+        <item> Fat</item>
+    </string-array>
 </resources>
