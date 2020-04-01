@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.app.AlertDialog;
 
 public class condition_search_results extends AppCompatActivity {
 
@@ -25,5 +26,27 @@ public class condition_search_results extends AppCompatActivity {
 
     public void listClicked(View view){
         startActivity(new Intent(condition_search_results.this, ShoppingList.class));
+    }
+
+    public void add(View view){
+        messageDisplay("", "Item was added to created shopping list");
+    }
+
+    public void view(View view){
+        messageDisplay("", "This will lead to the screen displaying the nutrition facts of the item");
+    }
+
+    public void messageDisplay(String title, String message){
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setCancelable(true);
+
+        builder.setTitle(title);
+        builder.setMessage(message);
+
+        builder.show();
+
+
     }
 }
