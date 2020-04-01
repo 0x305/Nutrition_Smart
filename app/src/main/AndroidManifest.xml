@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".ShoppingList" android:exported="true"></activity>
+        <activity android:name=".reminders"></activity>
+        <activity
+            android:name=".ShoppingList"
+            android:exported="true" />
         <activity android:name=".GeneralSearch" />
         <activity android:name=".search_by_common_condition" />
         <activity android:name=".condition_search_results" />

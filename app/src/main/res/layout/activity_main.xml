@@ -70,6 +70,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="7dp"
+        android:onClick="remindersClicked"
         android:text="@string/reminders"
         app:layout_constraintBottom_toTopOf="@+id/Goals"
         app:layout_constraintEnd_toEndOf="@+id/Goals"

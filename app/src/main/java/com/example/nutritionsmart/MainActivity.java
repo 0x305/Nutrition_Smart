@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, GeneralSearch.class));
     }
 
+    public void remindersClicked(View view){
+
+        startActivity(new Intent(MainActivity.this, reminders.class));
+    }
+
 
 
 
