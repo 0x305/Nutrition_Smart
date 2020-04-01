@@ -21,7 +21,7 @@ public class RecentFoods extends AppCompatActivity {
 
     ListView listView;
     String mTitle[] = {"Wendy's Single Dave","McDonald's Hamburger","Burger King's Hamburger"};
-    String mDescription[] ={"A hamgburger","Also a hamburger","Yet another hamburger"};
+    String mDescription[] ={"3/29/2020","3/31/2020","4/1/2020"};
     int images[] = {R.drawable.wendys,R.drawable.mcds,R.drawable.bkings};
 
 
