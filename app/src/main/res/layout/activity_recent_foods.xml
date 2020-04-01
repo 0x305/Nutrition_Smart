@@ -13,5 +13,24 @@
         android:id="@+id/listView"
         >
 
+        <Button
+            android:id="@+id/home3"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/List"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Search" />
+
+        <Button
+            android:id="@+id/home2"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/List"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/Search" />
     </ListView>
 </LinearLayout>
