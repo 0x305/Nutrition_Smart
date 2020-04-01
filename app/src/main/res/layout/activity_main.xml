@@ -95,7 +95,7 @@
         android:id="@+id/RecentFoodsB"
         android:layout_width="210dp"
         android:layout_height="207dp"
-        android:text="Recent Food"
+        android:text="Recent Foods"
         app:layout_constraintBottom_toTopOf="@+id/DietaryRestrictions"
         app:layout_constraintEnd_toEndOf="@+id/DietaryRestrictions"
         app:layout_constraintHorizontal_bias="0.0"
