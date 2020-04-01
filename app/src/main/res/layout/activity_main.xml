@@ -92,7 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Reminders" />
 
     <Button
-        android:id="@+id/RecentFoods"
+        android:id="@+id/RecentFoodsB"
         android:layout_width="210dp"
         android:layout_height="207dp"
         android:text="Recent Food"
