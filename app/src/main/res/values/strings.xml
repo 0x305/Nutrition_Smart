@@ -7,6 +7,7 @@
     <string name="reminders">Reminders</string>
     <string name="goals">Goals</string>
     <string name="welcome">Welcome!</string>
+    <string name="search_by_medical_condition">search by medical condition</string>
 
     <string-array name="filters">
         <item>Price</item>

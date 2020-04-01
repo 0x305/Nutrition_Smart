@@ -21,22 +21,26 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v){
-                openActivity();
+                openList();
             }
         });
 
-
     }
 
-    public void openActivity(){
+    public void openList(){
         Intent intent = new Intent(this, ShoppingList.class);
         startActivity(intent);
+    }
+
+    public void searchByMedicalClicked(View view){
+        startActivity(new Intent(MainActivity.this, search_by_common_condition.class));
     }
 
     public void searchClicked(View view ){
 
         startActivity(new Intent(MainActivity.this, GeneralSearch.class));
     }
+
 
 
 
