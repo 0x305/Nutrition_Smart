@@ -22,6 +22,21 @@ public class MainActivity extends AppCompatActivity {
                moveToRecentFoods();
             }
         });
+        button = (Button) findViewById(R.id.List);
+        button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                openActivity();
+            }
+        });
+
+
+    }
+
+    public void openActivity(){
+        Intent intent = new Intent(this, ShoppingList.class);
+        startActivity(intent);
     }
     private void moveToRecentFoods(){
         Intent intent = new Intent(MainActivity.this,RecentFoods.class);
@@ -31,4 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(new Intent(MainActivity.this, GeneralSearch.class));
     }
+
+
+
 }
