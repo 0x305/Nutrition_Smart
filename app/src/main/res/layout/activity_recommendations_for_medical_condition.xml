@@ -217,7 +217,7 @@
         android:id="@+id/textView9"
         android:layout_width="326dp"
         android:layout_height="62dp"
-        android:text="Recommended parameters for those with high blood pressure"
+        android:text="The recommended parameters for those with high blood pressure are set"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
