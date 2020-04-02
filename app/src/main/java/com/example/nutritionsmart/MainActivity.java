@@ -46,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, reminders.class));
     }
 
+    public void recentFoodsClicked(View view){
+
+        startActivity(new Intent(MainActivity.this, RecentFoods.class));
+    }
+
 
 
 

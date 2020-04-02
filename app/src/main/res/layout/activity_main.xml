@@ -60,7 +60,7 @@
         android:onClick="searchByMedicalClicked"
         android:text="@string/search_by_medical_condition"
         app:layout_constraintBottom_toTopOf="@+id/Search"
-        app:layout_constraintEnd_toStartOf="@+id/Goals"
+        app:layout_constraintEnd_toStartOf="@+id/RecentFoods"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,19 +72,20 @@
         android:layout_marginBottom="7dp"
         android:onClick="remindersClicked"
         android:text="@string/reminders"
-        app:layout_constraintBottom_toTopOf="@+id/Goals"
-        app:layout_constraintEnd_toEndOf="@+id/Goals"
-        app:layout_constraintStart_toStartOf="@+id/Goals"
+        app:layout_constraintBottom_toTopOf="@+id/RecentFoods"
+        app:layout_constraintEnd_toEndOf="@+id/RecentFoods"
+        app:layout_constraintStart_toStartOf="@+id/RecentFoods"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Goals"
+        android:id="@+id/RecentFoods"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
         android:layout_marginBottom="68dp"
-        android:text="@string/goals"
+        android:onClick="recentFoodsClicked"
+        android:text="Recent Foods"
         app:layout_constraintBottom_toTopOf="@+id/Home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/SearchMedical"

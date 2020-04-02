@@ -8,6 +8,7 @@
     <string name="goals">Goals</string>
     <string name="welcome">Welcome!</string>
     <string name="search_by_medical_condition">search by medical condition</string>
+    <string name="title_activity_recent_foods">RecentFoods</string>
 
     <string-array name="filters">
         <item>Price</item>
@@ -15,4 +16,5 @@
         <item>Calories</item>
         <item> Fat</item>
     </string-array>
+    <string name="action_settings">Settings</string>
 </resources>
