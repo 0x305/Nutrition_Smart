@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE4B5"
     tools:context=".reminders">
 
     <EditText
@@ -84,6 +85,7 @@
         android:layout_height="wrap_content"
         android:onClick="searchClicked"
         android:text="@string/search"
+        android:background="#008577"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Home"
         app:layout_constraintHorizontal_bias="0.5"
@@ -92,6 +94,7 @@
     <Button
         android:id="@+id/Home"
         android:layout_width="136dp"
+        android:background="#008577"
         android:layout_height="wrap_content"
         android:onClick="homeClicked"
         android:text="@string/home"
@@ -104,6 +107,7 @@
         android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:onClick="listClicked"
+        android:background="#008577"
         android:text="@string/list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,6 +179,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:onClick="submitClicked"
+        android:background="#008577"
         android:text="Submit Reminders"
         app:layout_constraintBottom_toTopOf="@+id/Home"
         app:layout_constraintEnd_toEndOf="parent"
