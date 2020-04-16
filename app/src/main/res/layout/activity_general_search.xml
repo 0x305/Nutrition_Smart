@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE4B5"
     tools:context=".GeneralSearch">
 
     <EditText
@@ -25,6 +26,7 @@
         android:layout_width="47dp"
         android:layout_height="38dp"
         android:onClick="itemSearched"
+        android:background="#008577"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.76"
@@ -51,6 +53,8 @@
         android:layout_height="wrap_content"
         android:onClick="homeClicked"
         android:text="@string/home"
+        android:background="#008577"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -63,6 +67,8 @@
         android:layout_width="87dp"
         android:layout_height="46dp"
         android:text="My List"
+        android:background="#008577"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.91"

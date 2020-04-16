@@ -5,6 +5,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE4B5"
     tools:context=".Hamburger1">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -51,11 +52,13 @@
         android:layout_height="wrap_content"
         android:onClick="homeClicked"
         android:text="@string/home"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="#008577"
         app:layout_constraintVertical_bias="0.988" />
 
     <TextView
