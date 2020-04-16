@@ -4,50 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE4B5"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/Search"
-        android:layout_width="135dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="#008577"
         android:onClick="searchClicked"
         android:text="@string/search"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Home"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/List"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/Home"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:text="@string/home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/List"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Search" />
-
-    <Button
         android:id="@+id/List"
-        android:layout_width="136dp"
+        android:layout_width="203dp"
         android:layout_height="wrap_content"
+        android:background="#008577"
         android:text="@string/list"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Home" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="295dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="88dp"
-        android:gravity="center"
-        android:text="@string/welcome"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/SearchMedical"
@@ -57,12 +38,15 @@
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
         android:layout_marginBottom="68dp"
+        android:background="#008577"
         android:onClick="searchByMedicalClicked"
         android:text="@string/search_by_medical_condition"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/Search"
         app:layout_constraintEnd_toStartOf="@+id/RecentFoods"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/Reminders"
@@ -70,10 +54,13 @@
         android:layout_height="0dp"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="7dp"
+        android:background="#008577"
         android:onClick="remindersClicked"
         android:text="@string/reminders"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/RecentFoods"
-        app:layout_constraintEnd_toEndOf="@+id/RecentFoods"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/RecentFoods"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,14 +68,27 @@
         android:id="@+id/RecentFoods"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginRight="9dp"
         android:layout_marginBottom="68dp"
+        android:background="#008577"
         android:onClick="recentFoodsClicked"
-        android:text="Recent Foods"
-        app:layout_constraintBottom_toTopOf="@+id/Home"
+        android:text="@string/recent_foods"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/List"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/SearchMedical"
         app:layout_constraintTop_toBottomOf="@+id/Reminders" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="330dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/todo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

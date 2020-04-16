@@ -34,5 +34,7 @@
             android:textSize="15sp"
             android:id = "@+id/textView2"
             />
+
     </LinearLayout>
+
 </LinearLayout>

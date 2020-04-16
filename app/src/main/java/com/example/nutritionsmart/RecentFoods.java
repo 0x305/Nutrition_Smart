@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,17 +41,24 @@ public class RecentFoods extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 if(position ==0){
-                    Toast.makeText(RecentFoods.this,"A hamburger",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(RecentFoods.this,"A hamburger",Toast.LENGTH_SHORT).show();
+                    startActivity( new Intent(RecentFoods.this, Hamburger1.class ));
                 }
-                if(position ==0){
+                if(position ==1){
                     Toast.makeText(RecentFoods.this,"Also a hamburger",Toast.LENGTH_SHORT).show();
                 }
-                if(position ==0){
+                if(position ==2){
                     Toast.makeText(RecentFoods.this,"Yet another hamburger",Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
+    public void homeClicked(View view){
+       startActivity(new Intent(RecentFoods.this, MainActivity.class));
+    }
+   // public void hammyClicked(View view){
+     //   startActivity( new Intent(RecentFoods.this, Hamburger1.class ));
+    //}
 
     class MyAdapter extends ArrayAdapter<String> {
 
