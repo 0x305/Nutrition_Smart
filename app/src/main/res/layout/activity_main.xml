@@ -40,7 +40,7 @@
         android:layout_marginBottom="68dp"
         android:background="#008577"
         android:onClick="searchByMedicalClicked"
-        android:text="@string/search_by_medical_condition"
+        android:text="Search by common medical conditions and nutrition parameters"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/Search"
         app:layout_constraintEnd_toStartOf="@+id/RecentFoods"
