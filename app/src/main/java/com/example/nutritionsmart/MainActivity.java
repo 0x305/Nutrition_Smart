@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void searchByMedicalClicked(View view){
-        startActivity(new Intent(MainActivity.this, search_by_common_condition.class));
+        startActivity(new Intent(MainActivity.this, condition0.class));
     }
 
     public void searchClicked(View view ){

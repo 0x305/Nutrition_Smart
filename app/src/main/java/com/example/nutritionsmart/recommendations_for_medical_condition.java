@@ -1,10 +1,10 @@
 package com.example.nutritionsmart;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 
 public class recommendations_for_medical_condition extends AppCompatActivity {
 
