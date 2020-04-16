@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".condition123"></activity>
+        <activity
+            android:name=".Hamburger1"
+            android:label="@string/title_activity_hamburger1"
+            android:parentActivityName=".RecentFoods"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nutritionsmart.RecentFoods" />
+        </activity>
+        <activity android:name=".condition123" />
         <activity android:name=".condition23" />
         <activity android:name=".condition13" />
         <activity android:name=".condition12" />

@@ -17,4 +17,5 @@
         <item> Fat</item>
     </string-array>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_hamburger1">Hamburger1</string>
 </resources>

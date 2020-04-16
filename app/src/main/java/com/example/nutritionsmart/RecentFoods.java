@@ -41,7 +41,8 @@ public class RecentFoods extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 if(position ==0){
-                    Toast.makeText(RecentFoods.this,"A hamburger",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(RecentFoods.this,"A hamburger",Toast.LENGTH_SHORT).show();
+                    startActivity( new Intent(RecentFoods.this, Hamburger1.class ));
                 }
                 if(position ==1){
                     Toast.makeText(RecentFoods.this,"Also a hamburger",Toast.LENGTH_SHORT).show();
@@ -53,8 +54,11 @@ public class RecentFoods extends AppCompatActivity {
         });
     }
     public void homeClicked(View view){
-        startActivity(new Intent(RecentFoods.this, MainActivity.class));
+       startActivity(new Intent(RecentFoods.this, MainActivity.class));
     }
+   // public void hammyClicked(View view){
+     //   startActivity( new Intent(RecentFoods.this, Hamburger1.class ));
+    //}
 
     class MyAdapter extends ArrayAdapter<String> {
 
