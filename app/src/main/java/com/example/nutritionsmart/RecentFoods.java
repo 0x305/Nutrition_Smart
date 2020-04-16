@@ -43,10 +43,10 @@ public class RecentFoods extends AppCompatActivity {
                 if(position ==0){
                     Toast.makeText(RecentFoods.this,"A hamburger",Toast.LENGTH_SHORT).show();
                 }
-                if(position ==0){
+                if(position ==1){
                     Toast.makeText(RecentFoods.this,"Also a hamburger",Toast.LENGTH_SHORT).show();
                 }
-                if(position ==0){
+                if(position ==2){
                     Toast.makeText(RecentFoods.this,"Yet another hamburger",Toast.LENGTH_SHORT).show();
                 }
             }
