@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#008577"
-
+        android:textColor="#ffffff"
         android:text="New Item"/>
 
 
@@ -25,6 +25,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ffffff"
         android:onClick="homeClicked"
         android:text="@string/home"
         app:layout_constraintBottom_toBottomOf="parent"

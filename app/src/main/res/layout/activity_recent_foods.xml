@@ -21,6 +21,7 @@
         android:layout_height="76dp"
         app:layout_constraintEnd_toStartOf="@id/title"
         android:onClick="homeClicked"
+        android:textColor="#ffffff"
         android:background="#008577"
         android:text="Home" />
 
