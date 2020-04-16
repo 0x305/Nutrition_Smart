@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,6 +51,9 @@ public class RecentFoods extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void homeClicked(View view){
+        startActivity(new Intent(RecentFoods.this, MainActivity.class));
     }
 
     class MyAdapter extends ArrayAdapter<String> {
