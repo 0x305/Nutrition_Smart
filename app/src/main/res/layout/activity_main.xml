@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="#008577"
         android:onClick="searchClicked"
-        android:text="@string/search"
+        android:text="General Search"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/List"
