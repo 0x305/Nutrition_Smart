@@ -15,15 +15,16 @@
         android:text="Recent Foods"
         android:textSize="20dp"
         />
+
     <Button
         android:id="@+id/Home"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="76dp"
-        app:layout_constraintEnd_toStartOf="@id/title"
-        android:onClick="homeClicked"
-        android:textColor="#ffffff"
         android:background="#008577"
-        android:text="Home" />
+        android:onClick="homeClicked"
+        android:text="Home"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@id/title" />
 
     <ListView
         android:id="@+id/listView"
