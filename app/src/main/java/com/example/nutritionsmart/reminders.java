@@ -57,7 +57,7 @@ public class reminders extends AppCompatActivity {
     }
 
     public void submitClicked(View view){
-        messageDisplay("", "You will be reminded to eat your food items at the times you listed :)");
+        messageDisplay("", "You will be reminded to eat your food items at the times that you listed.");
     }
 
     public void timeClicked1(View view){
